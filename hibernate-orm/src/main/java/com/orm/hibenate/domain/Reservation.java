@@ -1,10 +1,15 @@
 package com.orm.hibenate.domain;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "reservation")
-public class Reservation {
+public class Reservation implements Serializable {
+
+    private static final long serialversionUID = 129348938L;
+
+
     @Id
     @GeneratedValue
     private Long id ;

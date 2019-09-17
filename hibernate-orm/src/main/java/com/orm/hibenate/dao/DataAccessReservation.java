@@ -4,8 +4,8 @@ import com.orm.hibenate.domain.Reservation;
 import com.orm.hibenate.util.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.hibernate.cfg.Environment;
 
+import java.io.Serializable;
 import java.util.List;
 
 public class DataAccessReservation implements ReservationDAO {
