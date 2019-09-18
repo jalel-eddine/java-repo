@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="Reservation" class="com.java.spring.domain.Reservation">
+		<property name="id" value="123456789"/>
+		<property name="name" value="client" />
+		<property name="day" value="12" />
+		<property name="dateStart" value="01/01/2020 00:00:00" />
+	</bean>
+
+	<bean id="ReservationDataAccess" class="com.java.spring.dao.ReservationDataAccess">
+	</bean>
+</beans>
